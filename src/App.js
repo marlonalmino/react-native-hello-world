@@ -1,8 +1,9 @@
 import React from 'react'
 import {View, StyleSheet} from 'react-native'
 
-import Familia from './components/relacao/Familia'
-import Membro from './components/relacao/Membro'
+import UsuarioLogado from './components/UsuarioLogado'
+// import Familia from './components/relacao/Familia'
+// import Membro from './components/relacao/Membro'
 // import ParImpar from './components/ParImpar'
 // import ContadorV2 from './components/contador/ContadorV2'
 // import Pai from './components/indireta/Pai'
@@ -16,6 +17,12 @@ import Membro from './components/relacao/Membro'
 
 export default () => (
   <View style={style.App}>
+    <UsuarioLogado usuario={{nome: 'Gui', email: 'gui@gui.com'}} />
+    <UsuarioLogado usuario={{nome: 'Gui'}} />
+    <UsuarioLogado usuario={{ email: 'carlos@email.com' }} />
+    <UsuarioLogado usuario={null} />
+    <UsuarioLogado usuario={{}} />
+    {/*
     <Familia>
       <Membro nome='Bia' sobrenome='Arruda' />
       <Membro nome='Carlos' sobrenome='Arruda' />
@@ -27,7 +34,6 @@ export default () => (
       <Membro nome='Gui' sobrenome='Silva' />
       <Membro nome='Rebeca' sobrenome='Silva' />
     </Familia>
-    {/*
     <ParImpar num={1} />
     <ContadorV2 />
     <Pai />
