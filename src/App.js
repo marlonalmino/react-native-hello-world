@@ -1,7 +1,8 @@
 import React from 'react'
 import { View, StyleSheet } from 'react-native'
 
-import FlexboxV1 from './components/layout/FlexboxV1'
+import FlexboxV2 from './components/layout/FlexboxV2'
+// import FlexboxV1 from './components/layout/FlexboxV1'
 // import DigiteSeuNome from './components/DigiteSeuNome'
 // import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
 // import ListaProdutos from './components/produtos/ListaProdutos'
@@ -21,8 +22,9 @@ import FlexboxV1 from './components/layout/FlexboxV1'
 
 export default () => (
   <View style={style.App}>
-    <FlexboxV1 />
+    <FlexboxV2 />
     {/*
+    <FlexboxV1 />
     <DigiteSeuNome />
     <ListaProdutosV2 />
     <ListaProdutos />
