@@ -1,7 +1,8 @@
 import React from 'react'
 import {View, StyleSheet} from 'react-native'
 
-import DigiteSeuNome from './components/DigiteSeuNome'
+import Quadrado from './components/layout/Quadrado'
+// import DigiteSeuNome from './components/DigiteSeuNome'
 // import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
 // import ListaProdutos from './components/produtos/ListaProdutos'
 // import UsuarioLogado from './components/UsuarioLogado'
@@ -20,8 +21,12 @@ import DigiteSeuNome from './components/DigiteSeuNome'
 
 export default () => (
   <View style={style.App}>
-    <DigiteSeuNome />
+    <Quadrado />
+    <Quadrado cor='#F00' />
+    <Quadrado cor='#090' />
+    <Quadrado cor='#009' />
     {/*
+    <DigiteSeuNome />
     <ListaProdutosV2 />
     <ListaProdutos />
     <UsuarioLogado usuario={{nome: 'Gui', email: 'gui@gui.com'}} />
