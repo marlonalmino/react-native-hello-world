@@ -1,7 +1,7 @@
 import React from 'react'
-import {View, StyleSheet} from 'react-native'
+import { View, StyleSheet } from 'react-native'
 
-import Quadrado from './components/layout/Quadrado'
+import FlexboxV1 from './components/layout/FlexboxV1'
 // import DigiteSeuNome from './components/DigiteSeuNome'
 // import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
 // import ListaProdutos from './components/produtos/ListaProdutos'
@@ -21,10 +21,7 @@ import Quadrado from './components/layout/Quadrado'
 
 export default () => (
   <View style={style.App}>
-    <Quadrado />
-    <Quadrado cor='#F00' />
-    <Quadrado cor='#090' />
-    <Quadrado cor='#009' />
+    <FlexboxV1 />
     {/*
     <DigiteSeuNome />
     <ListaProdutosV2 />
