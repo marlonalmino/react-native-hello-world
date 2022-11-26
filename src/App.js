@@ -25,7 +25,7 @@ import Mega from './components/mega/Mega'
 
 export default () => (
   <View style={style.App}>
-    <Mega />
+    <Mega qtdeNumeros={7} />
     {/*
     <FlexboxV4 />
     <FlexboxV3 />
