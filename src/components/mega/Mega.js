@@ -8,7 +8,7 @@ export default class Mega extends Component {
     qtdeNumeros: this.props.qtdeNumeros
   }
 
-  alterarQtdeNumero(qtde) {
+  alterarQtdeNumero = (qtde) => {
     this.setState({ qtdeNumeros: qtde })
   }
 
@@ -20,9 +20,11 @@ export default class Mega extends Component {
           {this.state.qtdeNumeros}
         </Text>
         <TextInput
+          keyboardType={'numeric'}
+          style={{ borderBottomWidth: 1 }}
           placeholder='Qtde de Números'
           value={this.state.qtdeNumeros}
-          onChangeText={qtde => this.alterarQtdeNumero(qtde)}
+          onChangeText={this.alterarQtdeNumero}
         />
       </>
     )
